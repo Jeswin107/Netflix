@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    box-sizing: border-box;
+}
+
+.header {
+    width: 1519;
+    height: 700px; /* Use vh (viewport height) instead of % for full height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url(Images/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 8px solid #232323;
+}
+
+.menu{
+    margin: 0px 126.6px;
+    padding: 24px 48px;
+}
+
+.menu_1{
+    margin: -8px 0px 0px -16px;
+}
+
+.btn_sign_in {
+    background-color: #e50914;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_sign_out {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 8px 20px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-left: 800px;
+}
+
+.navbar {
+    padding-top: 1%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.img_logo {
+    width: 12%;
+    /* Removed unnecessary color property */
+}
+
+.enjoy {
+    height: 582px;
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-bottom: 8px solid #232323;
+}
+
+.enjoy_1 {
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.enjoy_1_1 {
+    width: 50%;
+}
+
+.h1_style {
+    font-size: 48px;
+    color: white;
+}
+
+.p1_class {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.enjoy_img {
+    width: 50%;
+}
+
+.enjoy_img img {
+    width: 100%;
+    height: auto;
+}
+
+.faq {
+    height: auto;
+    width: 100%;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #232323;
+}
+
+.faq_1{
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    color: white; /* Added color for label text */
+}
+
+label::after {
+    content: '+'; /* Kept the plus sign for now */
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.h2_style{
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+.main_container{
+    width: 100%;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_titiles_container{
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.main_title{
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 900; 
+}
+
+.main_subtitle{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.main_subtitle_1{
+    font-size: 18px;
+    padding-top: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 20px;
+}
+  
+.search-container input[type=text] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha (fourth value) as needed */
+    color: white;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 3px;
+    border: none;
+    font-size: 20px;
+    color:white;
+    font-weight: 400;
+}
+  
+.search-container button:hover {
+    background-color: #d10813;
+}
+  
+.search-container input[type=text]:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+.p1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search-container_1 {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+  
+.search-container_1 input[type=text] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha (fourth value) as needed */
+    color: white;
+    margin-right: 5px;
+}
+
+.search-container_1 button {
+    padding: 10px 20px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 3px;
+    border: none;
+    font-size: 20px;
+    color:white;
+    font-weight: 400;
+}
+  
+.search-container_1 button:hover {
+    background-color: #d10813;
+}
+  
+.search-container_1 input[type=text]:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+
+.footer {
+    border: 3px solid black;
+    background-color: black;
+  }
+  .footer_1{
+   color: rgb(255 255 255 / 70%);
+   margin: 65px 126.6px;
+   padding: 0px 48px;
+  }
+  .h2{
+    font-size: 16px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  .col a {
+    display: block;
+    color: rgb(255 255 255 / 70%);
+    text-decoration: underline;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    font-size: 14px;
+  }
+  
+  .col a:hover {
+    text-decoration: underline;
+  }
+  
+  .sm{
+    padding-top: 12px;
+  }
+
+  .language-btn{
+    background-color: black;
+    color: white;
+    padding: 6px 36px;
+    border: 1px solid white;
+  }
+
+  .copyright-txt{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.phone_link{
+    color: rgb(255 255 255 / 70%);
+}
+
+
+
+
+
+
+
